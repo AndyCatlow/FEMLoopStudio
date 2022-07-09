@@ -27,8 +27,7 @@ body {
   --fw-bold: 400;
   font-size: 15px;
   font-family: var(--ff-alata);
-  font-weight: var(--fw-light);
-  background: pink;
+  /* font-weight: var(--fw-light); */
 }
 
 h1,
@@ -132,6 +131,7 @@ header {
 /* ------------- */
 section {
   margin-inline: 5vw;
+  text-align: center;
 }
 
 /* ------------- */
@@ -146,6 +146,19 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.intro--title {
+  font-size: 2rem;
+  margin-top: 1.5em;
+  line-height: 1;
+}
+
+.intro--text {
+  width: 80vw;
+  margin: 1em auto;
+  color: var(--clr-dark-gray);
+  line-height: 1.6;
 }
 
 /* ------------- */
