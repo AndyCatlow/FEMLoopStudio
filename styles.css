@@ -2,29 +2,151 @@
 /*  reset        */
 /* ------------- */
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
 /* ------------- */
 /*  typography   */
 /* ------------- */
+
+body {
+  --ff-alata: "Alata", sans-serif;
+  --ff-josefin: "Josefin Sans", sans-serif;
+  --fw-light: 300;
+  --fw-bold: 400;
+  font-size: 15px;
+  font-family: var(--ff-alata);
+  font-weight: var(--fw-light);
+  background: pink;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-josefin);
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+}
+
+/* ------------- */
+/*  colors       */
+/* ------------- */
+
+html {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-dark-gray: hsl(0, 0%, 55%);
+  --clr-very-dark-gray: hsl(0, 0%, 41%);
+}
 
 /* ------------- */
 /* global styles */
 /* ------------- */
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo__container {
+  max-width: 35vw;
+}
+
 /* ------------- */
 /* nav           */
 /* ------------- */
 
+.navbar {
+  height: min-content;
+  /* position: relative; */
+  padding: 3em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  isolation: isolate;
+  z-index: 3;
+  /* background-color: plum; */
+}
+
+.menu-toggle__container {
+  width: 6vw;
+}
+
+.nav-list {
+  position: absolute;
+  list-style: none;
+  inset: 0;
+  background-color: black;
+  color: var(--clr-white);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  gap: 2em;
+}
+
+.hide-nav {
+  display: none;
+}
+
+.navbar .nav-link {
+  font-size: 1.5rem;
+  font-family: var(--ff-josefin);
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
+}
+
 /* ------------- */
 /* header        */
 /* ------------- */
+header {
+  min-height: 100vh;
+  background-image: url("./images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header--text__container {
+  color: var(--clr-white);
+  border: solid 2px var(--clr-white);
+  padding: 1em;
+  margin: 6em 1.5em;
+  font-size: 1.225rem;
+  line-height: 1;
+}
 
 /* ------------- */
 /* sections      */
 /* ------------- */
+section {
+  margin-inline: 5vw;
+}
 
 /* ------------- */
 /* intro         */
 /* ------------- */
+
+.intro--img__container {
+  margin-top: 15vh;
+  width: 90vw;
+  height: 60vw;
+  background-image: url("./images/mobile/image-interactive.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* ------------- */
 /* creations     */
@@ -33,6 +155,11 @@
 /* ------------- */
 /* footer        */
 /* ------------- */
+
+.social-icon__container {
+  width: 2em;
+  background-color: blue;
+}
 
 /* ------------------------------------------------------------------ */
 /* desktop adjustments                                                */
@@ -65,6 +192,15 @@
 /* ------------- */
 /* creations     */
 /* ------------- */
+
+.card {
+  background-image: url("./images/desktop/image-curiosity.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 400px;
+}
 
 /* ------------- */
 /* footer        */
