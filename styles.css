@@ -38,6 +38,10 @@ h3 {
   font-weight: var(--fw-bold);
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 /* ------------- */
 /*  colors       */
 /* ------------- */
@@ -149,7 +153,6 @@ section {
 }
 
 .intro--title {
-  font-size: 2rem;
   margin-top: 1.5em;
   line-height: 1;
 }
@@ -165,6 +168,44 @@ section {
 /* creations     */
 /* ------------- */
 
+.creations--title {
+  margin-top: 3em;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 3em;
+}
+
+.card {
+  width: 325px;
+  aspect-ratio: 3 / 1.1;
+  background-image: url("./images/mobile/image-deep-earth.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card--title {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  line-height: 1;
+  /* outline: 2px solid red; */
+  width: 9ch;
+  height: min-content;
+  text-align: left;
+  position: absolute;
+  bottom: 0.8em;
+  left: 0.8em;
+  /* padding: 0.8em; */
+}
+
 /* ------------- */
 /* footer        */
 /* ------------- */
@@ -177,44 +218,41 @@ section {
 /* ------------------------------------------------------------------ */
 /* desktop adjustments                                                */
 /* ------------------------------------------------------------------ */
+@media screen and (min-width: 860px) {
+  /* ------------- */
+  /*  typography   */
+  /* ------------- */
 
-/* ------------- */
-/*  typography   */
-/* ------------- */
+  /* ------------- */
+  /* global styles */
+  /* ------------- */
 
-/* ------------- */
-/* global styles */
-/* ------------- */
+  /* ------------- */
+  /* nav           */
+  /* ------------- */
 
-/* ------------- */
-/* nav           */
-/* ------------- */
+  /* ------------- */
+  /* header        */
+  /* ------------- */
 
-/* ------------- */
-/* header        */
-/* ------------- */
+  /* ------------- */
+  /* sections      */
+  /* ------------- */
 
-/* ------------- */
-/* sections      */
-/* ------------- */
+  /* ------------- */
+  /* intro         */
+  /* ------------- */
 
-/* ------------- */
-/* intro         */
-/* ------------- */
+  /* ------------- */
+  /* creations     */
+  /* ------------- */
 
-/* ------------- */
-/* creations     */
-/* ------------- */
+  .card {
+    width: 200px;
+    height: 400px;
+  }
 
-.card {
-  background-image: url("./images/desktop/image-curiosity.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 400px;
+  /* ------------- */
+  /* footer        */
+  /* ------------- */
 }
-
-/* ------------- */
-/* footer        */
-/* ------------- */
