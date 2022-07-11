@@ -28,7 +28,7 @@
         <div class="logo__container img__container">
           <img src="./images/logo.svg" alt="loop studios logo" />
         </div>
-        <ul class="nav-list hide-nav">
+        <ul class="nav-list hide-nav" aria-expanded="false">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#careers" class="nav-link">Careers</a></li>
           <li><a href="#events" class="nav-link">Events</a></li>
@@ -36,7 +36,13 @@
           <li><a href="#support" class="nav-link">Support</a></li>
         </ul>
         <div class="menu-toggle__container img__container">
-          <img src="./images/icon-hamburger.svg" alt="" class="menu-toggle" />
+          <button class="menu-toggle">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt=""
+              id="toggle-menu-image"
+            />
+          </button>
         </div>
       </nav>
       <div class="header--text__container">
@@ -59,13 +65,12 @@
           </p>
         </div>
       </section>
-      <section>
+      <section class="creations--section">
         <div class="creations--text__container">
           <h2 class="creations--title">Our creations</h2>
-          
         </div>
         <div class="cards__container">
-          <div class="card">
+          <!-- <div class="card">
             <h3 class="card--title">Deep earth</h3>
           </div>
           <div class="card">
@@ -75,7 +80,7 @@
             <h3 class="card--title">Soccer team VR</h3>
           </div>
           <div class="card">
-            <h3 class="card--title">The grid</h3>
+            <h3 class="card--title">The <br/> grid</h3>
           </div>
           <div class="card">
             <h3 class="card--title">From up above VR</h3>
@@ -88,7 +93,7 @@
           </div>
           <div class="card">
             <h3 class="card--title">Make it fisheye</h3>
-          </div>
+          </div> -->
         </div>
         <a href="#" class="see-all btn">See all</a>
       </section>
@@ -117,8 +122,7 @@
                 alt="facebook"
                 class="social-icon"
               />
-             /a
-            >
+            </a>
           </div>
           <div class="social-icon__container img__container">
             <a href="https://twitter.com" class="social-link" target="_blank"
@@ -127,8 +131,7 @@
                 alt="twitter"
                 class="social-icon"
               />
-            </a
-            >
+            </a>
           </div>
           <div class="social-icon__container img__container">
             <a href="https://pinterest.com" class="social-link" target="_blank"
@@ -137,8 +140,7 @@
                 alt="pinterest"
                 class="social-icon"
               />
-            </a
-            >
+            </a>
           </div>
           <div class="social-icon__container img__container">
             <a href="https://instagram.com" class="social-link" target="_blank"
@@ -147,19 +149,18 @@
                 alt="instagram"
                 class="social-icon"
               />
-             /a
-            >
+            </a>
           </div>
         </div>
         <div class="copyright">© 2021 Loopstudios. All rights reserved.</div>
       </div>
     </footer>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>

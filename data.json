@@ -1,6 +1,6 @@
 [
   {
-    "title": "Deep earth",
+    "title": "Deep <br/> earth",
     "imageSlug": "image-deep-earth.jpg",
     "images": {
       "mobile": "./images/mobile/image-deep-earth.jpg",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "title": "Night arcade",
+    "title": "Night <br/> arcade",
     "imageSlug": "image-night-arcade.jpg",
     "images": {
       "mobile": "./images/mobile/image-night-arcade.jpg",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "title": "Soccer team VR",
+    "title": "Soccer <br/> team VR",
     "imageSlug": "image-soccer-team.jpg",
     "images": {
       "mobile": "./images/mobile/image-soccer-team.jpg",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "title": "The grid",
+    "title": "The <br/> grid",
     "imageSlug": "image-grid.jpg",
     "images": {
       "mobile": "./images/mobile/image-grid.jpg",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "title": "From up above VR",
+    "title": "From up <br/> above VR",
     "imageSlug": "image-from-above.jpg",
     "images": {
       "mobile": "./images/mobile/image-from-above.jpg",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "title": "Pocket borealis",
+    "title": "Pocket <br/> borealis",
     "imageSlug": "image-pocket-borealis.jpg",
     "images": {
       "mobile": "./images/mobile/image-pocket-borealis.jpg",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "title": "The curiosity",
+    "title": "The <br/> curiosity",
     "imageSlug": "image-curiosity.jpg",
     "images": {
       "mobile": "./images/mobile/image-curiosity.jpg",
@@ -56,7 +56,7 @@
     }
   },
   {
-    "title": "Make it fisheye",
+    "title": "Make it <br/> fisheye",
     "imageSlug": "image-fisheye.jpg",
     "images": {
       "mobile": "./images/mobile/image-fisheye.jpg",

@@ -71,18 +71,24 @@ a {
 /* ------------- */
 
 .navbar {
-  height: min-content;
+  height: 15vh;
   /* position: relative; */
   padding: 3em 1.5em;
   display: flex;
   justify-content: space-between;
   isolation: isolate;
   z-index: 3;
-  /* background-color: plum; */
 }
 
 .menu-toggle__container {
   width: 6vw;
+  aspect-ratio: 1;
+}
+
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .nav-list {
@@ -97,10 +103,17 @@ a {
   justify-content: center;
   padding: 2em;
   gap: 2em;
+  transform: scale(1);
+  transform-origin: top right;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
 }
 
 .hide-nav {
-  display: none;
+  /* display: none; */
+  transform: scale(0);
+  opacity: 0;
+  transition: all 500ms ease;
 }
 
 .navbar .nav-link {
@@ -168,6 +181,10 @@ section {
 /* creations     */
 /* ------------- */
 
+.creations--section {
+  padding-bottom: 8em;
+}
+
 .creations--title {
   margin-top: 3em;
 }
@@ -180,16 +197,30 @@ section {
   align-items: center;
   gap: 1.5em;
   margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .card {
   width: 325px;
   aspect-ratio: 3 / 1.1;
-  background-image: url("./images/mobile/image-deep-earth.jpg");
+  /* background-image: url("./images/mobile/image-deep-earth.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.4);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.5) 11%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  /* z-index: 2; */
 }
 
 .card--title {
@@ -204,15 +235,69 @@ section {
   bottom: 0.8em;
   left: 0.8em;
   /* padding: 0.8em; */
+  z-index: 3;
+}
+
+.see-all.btn {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 0.5em 2em;
+  border: 1px solid var(--clr-black);
 }
 
 /* ------------- */
 /* footer        */
 /* ------------- */
 
+footer {
+  min-height: 70vh;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+
+.footer--left {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.footer--left .logo__container {
+  max-width: 40vw;
+}
+
+.footer-nav-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-nav-list > * + * {
+  margin-top: 1em;
+}
+
+.footer--right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
 .social-icon__container {
-  width: 2em;
-  background-color: blue;
+  width: 1.625em;
+}
+
+.copyright {
+  color: var(--clr-dark-gray);
 }
 
 /* ------------------------------------------------------------------ */
