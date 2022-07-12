@@ -125,6 +125,7 @@ a:active::after {
   transform-origin: top right;
   opacity: 1;
   transition: all 500ms ease-in-out;
+  margin-inline-start: 1em;
 }
 
 .hide-nav {
@@ -155,7 +156,7 @@ header {
   color: var(--clr-white);
   border: solid 3px var(--clr-white);
   padding: 1em;
-  margin: 6em 1.5em;
+  margin: 6em auto;
   font-size: clamp(12px, 3vw + 0.5rem, 2.25rem);
   line-height: 1;
   /* max-width: 60vw; */
@@ -338,7 +339,7 @@ footer {
 /* ------------------------------------------------------------------ */
 /* desktop adjustments                                                */
 /* ------------------------------------------------------------------ */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 875px) {
   /* ------------- */
   /*  typography   */
   /* ------------- */
