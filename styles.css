@@ -81,6 +81,19 @@ a:active::after {
   transform: translateX(50%) scaleX(1);
 }
 
+@media screen and (max-width: 875px) {
+  a.primary-nav-link::after {
+    transform: translateX(0%) scale(0);
+    transform-origin: left;
+  }
+
+  a.primary-nav-link:hover::after,
+  a.primary-nav-link:focus::after,
+  a.primary-nav-link:active::after {
+    transform: translateX(0%) scaleX(1);
+  }
+}
+
 /* ------------- */
 /* nav           */
 /* ------------- */
@@ -113,6 +126,7 @@ a:active::after {
   position: absolute;
   list-style: none;
   inset: 0;
+  /* width: 100vw; */
   background-color: black;
   color: var(--clr-white);
   z-index: -1;
@@ -125,7 +139,6 @@ a:active::after {
   transform-origin: top right;
   opacity: 1;
   transition: all 500ms ease-in-out;
-  margin-inline-start: 1em;
 }
 
 .hide-nav {
@@ -421,6 +434,7 @@ footer {
     align-items: center;
     background-color: transparent;
     font-size: 0.8rem;
+    margin-inline-start: 1em;
   }
 
   .navbar .nav-link {
