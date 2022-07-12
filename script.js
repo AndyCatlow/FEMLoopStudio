@@ -44,10 +44,10 @@ function getCardsHtml(arr) {
 getCardData();
 
 cardsContainer.addEventListener("click", (e) => {
-  console.log(e.target.id);
-  fullscreenDiv.setAttribute("data-fullscreen", "true");
-  fullscreenDiv.style.backgroundImage = `url("./images/desktop/${e.target.id}.jpg")`;
-  //   fullscreenImage.src = e.target.id;
+  if (e.target.id) {
+    fullscreenDiv.setAttribute("data-fullscreen", "true");
+    fullscreenDiv.style.backgroundImage = `url("./images/desktop/${e.target.id}.jpg")`;
+  }
 });
 
 fullscreenDiv.addEventListener("click", () => {
