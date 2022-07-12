@@ -1,7 +1,7 @@
 [
   {
     "title": "Deep <br/> earth",
-    "imageSlug": "image-deep-earth.jpg",
+    "imageSlug": "image-deep-earth",
     "images": {
       "mobile": "./images/mobile/image-deep-earth.jpg",
       "desktop": "./images/desktop/image-deep-earth.jpg"
@@ -9,7 +9,7 @@
   },
   {
     "title": "Night <br/> arcade",
-    "imageSlug": "image-night-arcade.jpg",
+    "imageSlug": "image-night-arcade",
     "images": {
       "mobile": "./images/mobile/image-night-arcade.jpg",
       "desktop": "./images/desktop/image-night-arcade.jpg"
@@ -17,7 +17,7 @@
   },
   {
     "title": "Soccer <br/> team VR",
-    "imageSlug": "image-soccer-team.jpg",
+    "imageSlug": "image-soccer-team",
     "images": {
       "mobile": "./images/mobile/image-soccer-team.jpg",
       "desktop": "./images/desktop/image-soccer-team.jpg"
@@ -25,7 +25,7 @@
   },
   {
     "title": "The <br/> grid",
-    "imageSlug": "image-grid.jpg",
+    "imageSlug": "image-grid",
     "images": {
       "mobile": "./images/mobile/image-grid.jpg",
       "desktop": "./images/desktop/image-grid.jpg"
@@ -33,7 +33,7 @@
   },
   {
     "title": "From up <br/> above VR",
-    "imageSlug": "image-from-above.jpg",
+    "imageSlug": "image-from-above",
     "images": {
       "mobile": "./images/mobile/image-from-above.jpg",
       "desktop": "./images/desktop/image-from-above.jpg"
@@ -41,7 +41,7 @@
   },
   {
     "title": "Pocket <br/> borealis",
-    "imageSlug": "image-pocket-borealis.jpg",
+    "imageSlug": "image-pocket-borealis",
     "images": {
       "mobile": "./images/mobile/image-pocket-borealis.jpg",
       "desktop": "./images/desktop/image-pocket-borealis.jpg"
@@ -49,7 +49,7 @@
   },
   {
     "title": "The <br/> curiosity",
-    "imageSlug": "image-curiosity.jpg",
+    "imageSlug": "image-curiosity",
     "images": {
       "mobile": "./images/mobile/image-curiosity.jpg",
       "desktop": "./images/desktop/image-curiosity.jpg"
@@ -57,7 +57,7 @@
   },
   {
     "title": "Make it <br/> fisheye",
-    "imageSlug": "image-fisheye.jpg",
+    "imageSlug": "image-fisheye",
     "images": {
       "mobile": "./images/mobile/image-fisheye.jpg",
       "desktop": "./images/desktop/image-fisheye.jpg"

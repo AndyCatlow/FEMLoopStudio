@@ -212,6 +212,7 @@ main {
 
 .creations--section {
   padding-bottom: 8em;
+  position: relative;
 }
 
 .creations--title {
@@ -230,15 +231,14 @@ main {
 }
 
 .card {
-  /* width: 325px; */
   width: 90vw;
   max-width: 300px;
   aspect-ratio: 3 / 1.1;
-  /* background-image: url("./images/mobile/image-deep-earth.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  cursor: pointer;
 }
 
 .card::after {
@@ -251,22 +251,20 @@ main {
     rgba(0, 0, 0, 0.5) 11%,
     rgba(0, 0, 0, 0) 100%
   );
-  /* z-index: 2; */
 }
 
 .card--title {
   color: var(--clr-white);
   font-size: 1.5rem;
   line-height: 1;
-  /* outline: 2px solid red; */
   width: 9ch;
   height: min-content;
   text-align: left;
   position: absolute;
   bottom: 0.8em;
   left: 0.8em;
-  /* padding: 0.8em; */
   z-index: 3;
+  pointer-events: none;
 }
 
 .see-all.btn {
@@ -284,6 +282,30 @@ main {
 .see-all.btn:active {
   color: var(--clr-white);
   background-color: var(--clr-black);
+}
+
+.fullscreen {
+  display: none;
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.8);
+  /* background-image: url("./images/desktop/image-curiosity.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 3em;
+}
+
+.fullscreen[data-fullscreen="true"] {
+  display: block;
+  position: absolute;
+  inset: 0 0 2em 0;
+  transform: scale(1);
+  z-index: 10;
+}
+
+#fullscreen-img {
+  width: 100%;
+  height: 100%;
 }
 
 /* ------------- */
