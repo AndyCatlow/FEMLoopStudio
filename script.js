@@ -32,7 +32,7 @@ function getCardsHtml(arr) {
   let cardsHtml = "";
 
   arr.forEach((card) => {
-    let image = viewportWidth > 860 ? card.images.desktop : card.images.mobile;
+    let image = viewportWidth > 875 ? card.images.desktop : card.images.mobile;
     cardsHtml += `
     <div class="card" style="background-image: url('${image}');" id=${card.imageSlug}>
         <h3 class="card--title" >${card.title}</h3>
