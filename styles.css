@@ -63,7 +63,7 @@ a {
 }
 
 .logo__container {
-  width: 11em;
+  width: 10em;
 }
 
 /* ------------- */
@@ -72,7 +72,6 @@ a {
 
 .navbar {
   height: 15vh;
-  /* position: relative; */
   padding: 3em 1.5em;
   display: flex;
   justify-content: space-between;
@@ -138,16 +137,22 @@ header {
   border: solid 2px var(--clr-white);
   padding: 1em;
   margin: 6em 1.5em;
-  font-size: 1.225rem;
+  font-size: clamp(12px, 3vw + 0.5rem, 2rem);
   line-height: 1;
-  max-width: 60vw;
+  /* max-width: 60vw; */
+  width: min(90vw, 500px);
+}
+
+.header--text {
+  max-width: 12ch;
+  /* font-size: 5rem; */
 }
 
 /* ------------- */
 /* sections      */
 /* ------------- */
-section {
-  margin-inline: 5vw;
+main {
+  padding-inline: clamp(2rem, 5vw, 8rem);
   text-align: center;
 }
 
@@ -157,7 +162,7 @@ section {
 
 .intro--img__container {
   margin-top: 15vh;
-  width: 90vw;
+  max-width: 90vw;
   height: 60vw;
   background-image: url("./images/mobile/image-interactive.jpg");
   background-position: center;
@@ -205,7 +210,8 @@ section {
 }
 
 .card {
-  width: 325px;
+  /* width: 325px; */
+  width: 90vw;
   aspect-ratio: 3 / 1.1;
   /* background-image: url("./images/mobile/image-deep-earth.jpg"); */
   background-position: center;
@@ -254,7 +260,7 @@ section {
 /* ------------- */
 
 footer {
-  min-height: 70vh;
+  /* min-height: 70vh; */
   background-color: var(--clr-black);
   color: var(--clr-white);
   display: flex;
@@ -262,6 +268,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 3em;
+  padding-block: 3em;
 }
 
 .footer--left {
@@ -276,12 +283,16 @@ footer {
 
 .footer-nav-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
   text-align: center;
 }
 
-.footer-nav-list > * + * {
+/* .footer-nav-list > * + * {
   margin-top: 1em;
-}
+} */
 
 .footer--right {
   display: flex;
@@ -317,7 +328,8 @@ footer {
   /* ------------- */
 
   header,
-  main {
+  main,
+  footer {
     padding-inline: 8rem;
   }
 
@@ -337,6 +349,9 @@ footer {
   .nav-list {
     position: relative;
     flex-direction: row;
+    padding: 0;
+    line-height: 1;
+    margin-bottom: 5px;
     transform: scale(1);
     opacity: 1;
     align-items: center;
@@ -356,12 +371,7 @@ footer {
   .header--text__container {
     width: max-content;
     margin: 1em 1.5em;
-    padding: 2em;
-  }
-
-  .header--text {
-    max-width: 12ch;
-    font-size: 5rem;
+    padding: 1em;
   }
 
   /* ------------- */
@@ -412,12 +422,43 @@ footer {
   /* creations     */
   /* ------------- */
 
+  .creations--section {
+    position: relative;
+  }
+
+  .creations--title {
+    text-align: left;
+  }
+
+  .cards__container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    /* max-width: 1000px; */
+    /* margin-inline: auto; */
+  }
+
   .card {
-    width: 200px;
+    max-width: 240px;
     height: 400px;
+  }
+
+  .see-all {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   /* ------------- */
   /* footer        */
   /* ------------- */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-nav-list {
+    flex-direction: row;
+  }
 }
