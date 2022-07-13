@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AndyCatlow/FEMLoopStudio)
-- Live Site URL: [Add live site URL here](https://loopstudio-ac.netlify.app)
+- Solution URL: [https://github.com/AndyCatlow/FEMLoopStudio](https://github.com/AndyCatlow/FEMLoopStudio)
+- Live Site URL: [https://loopstudio-ac.netlify.app](https://loopstudio-ac.netlify.app)
 
 ## My process
 
