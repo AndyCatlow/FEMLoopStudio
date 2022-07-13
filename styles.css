@@ -27,7 +27,6 @@ body {
   --fw-bold: 400;
   font-size: 15px;
   font-family: var(--ff-alata);
-  /* font-weight: var(--fw-light); */
 }
 
 h1,
@@ -126,7 +125,6 @@ a:active::after {
   position: absolute;
   list-style: none;
   inset: 0;
-  /* width: 100vw; */
   background-color: black;
   color: var(--clr-white);
   z-index: -1;
@@ -178,7 +176,6 @@ header {
 
 .header--text {
   max-width: 12ch;
-  /* font-size: 5rem; */
 }
 
 /* ------------- */
@@ -301,7 +298,6 @@ main {
   display: none;
   position: fixed;
   inset: 0;
-
   height: 100vh;
   width: 100vw;
   transform: scale(0);
@@ -329,7 +325,6 @@ main {
 /* ------------- */
 
 footer {
-  /* min-height: 70vh; */
   background-color: var(--clr-black);
   color: var(--clr-white);
   display: flex;
@@ -358,10 +353,6 @@ footer {
   gap: 1em;
   text-align: center;
 }
-
-/* .footer-nav-list > * + * {
-  margin-top: 1em;
-} */
 
 .footer--right {
   display: flex;
@@ -448,19 +439,9 @@ footer {
 
   header {
     background-image: url("./images/desktop/image-hero.jpg");
-    /* background-size: contain;
-    background-position: top; */
     position: relative;
     z-index: 0;
   }
-
-  /* header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 1);
-    z-index: 1;
-  } */
 
   .header--text__container {
     width: max-content;
@@ -535,17 +516,7 @@ footer {
     text-align: left;
   }
 
-  /* .cards__container { */
-  /* display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-
-  /* max-width: 1200px;
-    margin-inline: auto; */
-  /* } */
-
   .card {
-    /* max-width: 240px; */
     width: calc(25% - 1.5em);
     height: 400px;
   }
@@ -559,6 +530,7 @@ footer {
   /* ------------- */
   /* footer        */
   /* ------------- */
+
   footer {
     flex-direction: row;
     justify-content: space-between;
